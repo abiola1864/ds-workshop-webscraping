@@ -50,7 +50,12 @@ searchElem$clickElement() # click on button
 
 # store index page
 output <- remDr$getPageSource(header = TRUE)
+<<<<<<< HEAD
 write(output[[1]], file = "C:/Users/User/OneDrive/Stats Lab/imdb-data-movies.html")
+=======
+dir.create("data")
+write(output[[1]], file = "data/imdb-data-movies.html")
+>>>>>>> 46f5126cd0b1f469af3c6c745d3505a0798f6d90
 
 # close connection
 remDr$closeServer()

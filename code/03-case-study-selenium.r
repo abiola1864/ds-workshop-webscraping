@@ -26,7 +26,7 @@ url <- "https://www.imdb.com/search/title"
 remDr$navigate(url)
 
 # enter keyword in title field
-xpath <- '//*[@id="main"]/div[1]/div[2]/input'
+xpath <- '//input'
 titleElem <- remDr$findElement(using = 'xpath', value = xpath)
 titleElem$sendKeysToElement(list("data")) # enter key word
 
@@ -50,7 +50,7 @@ searchElem$clickElement() # click on button
 
 # store index page
 output <- remDr$getPageSource(header = TRUE)
-write(output[[1]], file = "data/imdb-data-movies.html")
+write(output[[1]], file = "C:/Users/User/OneDrive/Stats Lab/imdb-data-movies.html")
 
 # close connection
 remDr$closeServer()

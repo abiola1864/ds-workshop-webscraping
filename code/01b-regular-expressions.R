@@ -16,6 +16,7 @@ string1 <- 'This is a string'
 string2 <- 'If I want to include a "quote" inside a string, I use single quotes'
 
 # to include a literal single or double quote in a string you can use \ to escape it:
+string32 <- 'If I want to include a "quote" inside a string, I use single quotes'
 double_quote <- "\"" # or '"'
 single_quote <- '\'' # or "'"
 
